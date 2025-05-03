@@ -1,0 +1,5 @@
+google-generativeai
+pymongo
+SpeechRecognition
+PyAudio  # Cần thiết cho SpeechRecognition để truy cập microphone
+dotenv
