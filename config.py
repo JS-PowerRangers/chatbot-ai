@@ -8,8 +8,8 @@ GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY", "YOUR_GOOGLE_API_KEY_HERE")
 
 # Chuỗi kết nối MongoDB
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017/") # Thay bằng URI của bạn nếu khác
-DB_NAME = "cua_hang_db"
-COLLECTION_NAME = "san_pham"
+DB_NAME = "shopdb"
+COLLECTION_NAME = "products"
 
 # Cấu hình khác (nếu cần)
 LANGUAGE_CODE = "vi-VN"
