@@ -5,4 +5,4 @@ PyAudio  # Cần thiết cho SpeechRecognition để truy cập microphone
 dotenv
 playsound==1.2.2
 gtts
-websockets
+websockets==15.0.1

@@ -15,6 +15,21 @@ except Exception as e:
     db = None
     collection = None
 
+def should_search_db(query_text):
+    """
+    Quyết định xem có nên tìm kiếm trong DB hay không dựa trên từ khóa.
+    Đây là logic rất cơ bản cho MVP.
+    """
+    if not query_text:
+        return False
+    query_lower = query_text.lower()
+    # Các từ khóa gợi ý cần tra cứu DB
+    db_keywords = ["giá", "khuyến mãi", "sản phẩm", "hàng", "cửa hàng", "ở đâu", "mở cửa"]
+    for keyword in db_keywords:
+        if keyword in query_lower:
+            return True
+    return False
+
 def format_product_info(doc):
     """Định dạng thông tin sản phẩm."""
     if not doc:
